@@ -134,11 +134,11 @@ const SiderMenu: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (props) => {
       {fixSiderbar && (
         <div
           style={{
-            width: collapsed ? 48 : siderWidth,
+            width: collapsed ? 60 : siderWidth,
             overflow: 'hidden',
-            flex: `0 0 ${collapsed ? 48 : siderWidth}px`,
-            maxWidth: collapsed ? 48 : siderWidth,
-            minWidth: collapsed ? 48 : siderWidth,
+            flex: `0 0 ${collapsed ? 60 : siderWidth}px`,
+            maxWidth: collapsed ? 60 : siderWidth,
+            minWidth: collapsed ? 60 : siderWidth,
             transition: `background-color 0.3s, min-width 0.3s, max-width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)`,
             ...style,
           }}
@@ -153,7 +153,7 @@ const SiderMenu: React.FC<SiderMenuProps & PrivateSiderMenuProps> = (props) => {
           if (isMobile) return;
           onCollapse?.(collapse);
         }}
-        collapsedWidth={48}
+        collapsedWidth={60}
         style={{
           overflow: 'hidden',
           paddingTop: layout === 'mix' && !isMobile ? headerHeight : undefined,

@@ -224,7 +224,7 @@ const getPaddingLeft = (
   siderWidth: number,
 ): number | undefined => {
   if (hasLeftPadding) {
-    return collapsed ? 48 : siderWidth;
+    return collapsed ? 60 : siderWidth;
   }
   return 0;
 };
